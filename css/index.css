@@ -1,0 +1,331 @@
+/* 
+font-family: 'Roboto', sans-serif;
+font-family: 'Lato', sans-serif;
+*/
+/* start referncers classes */
+.container {
+    width: 95%;
+    margin: auto;
+}
+*{
+    box-sizing: border-box;
+}
+.book{
+    width: 50%;
+    float: left;
+}
+/*start styling element html */
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    overflow: hidden;
+}
+/* start styling box left */
+.box-left{
+width: 50%;
+height: 100vh;
+}
+.box-left .left_bar{
+width:80px;
+height: 100%;
+position: absolute;
+left: 0;
+top: 0;
+
+}
+.box-left .left_bar #logo{
+    color: #000;
+    text-align: center;
+    transform:rotate(-90deg);
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+    font-family: 'Roboto', sans-serif;
+    font-weight:bold;
+    letter-spacing: -1px;
+    font-size: 24px
+}
+.box-left .left_bar ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    padding-top: 50vh;
+}
+.box-left .left_bar ul li {
+    transform: rotate(-90deg);
+}
+.box-left .left_bar ul li a{
+    display: inline-block;
+    width:80px;
+    height: 80px;
+    line-height:80px;
+    color: #000;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    transition: all .1s cubic-bezier(0.63, 0.24, 1, 1);
+    cursor: pointer;
+    
+}
+.box-left .intro{
+    height:100vh;
+    position: relative;
+    background-position: 0% 0%;
+    background: url('./img/julian-myles-CDBDBmhvKtg-unsplash.jpg');
+    background-size: 200% 200%;
+    transition: all 4s ease;
+}
+.box-left .intro div {
+    position: absolute;
+    top:50%;
+    left: 0;
+    transform: translate(0, -50%);
+    text-align: center;
+}
+.box-left .intro div h1 {
+    margin-top:0;
+    text-align: center;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+.box-left .intro div p{
+    text-align: center;
+}
+
+
+
+/* start styling box right*/
+.box-right{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+/* start head menu */
+.box-right .head{
+   width: 100%;
+   height: 75px;
+}
+.box-right .head .menu{
+    width: 20%;
+    height: 100%;
+    float: right;
+    text-align: right;
+    line-height: 100px;
+}
+.box-right .head .menu span{
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    transition: color .1s linear;
+}
+.box-right .head .menu span:hover {
+    color: #bb643c;
+}
+.box-right .head .list-menu{
+    width: 0%;
+    height: 100%;
+    float: right;
+    list-style: none;
+    display: flex;
+    line-height: 100px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    overflow: hidden;
+    transition: width .5s ease;
+}
+.box-right .head .list-menu li a{
+    color:#000;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    transition: text-decoration 0.5s cubic-bezier(0.25, 0.1, 0.97, 0.46);
+}
+.box-right .head .list-menu li a.active span{
+font-size: 30px;
+}
+.box-right .head .list-menu li a:not(.active):hover {
+    text-decoration: underline;
+}
+/* start box_slider */
+.box-right .product{
+   width: 100%;
+   height: 90vh;
+   position: absolute;
+}
+.box-right .product .bx-wrapper{
+    max-width: 80%;
+    margin: auto;
+    height: 90vh;
+    padding: 64px 40px 40px 40px;
+    -webkit-box-shadow: none;
+    box-shadow: none; 
+    border: none; 
+    background: #fff;
+}
+.box-right .product .bx-wrapper .bx-viewport{
+    height: 80vh !important;
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    margin-top: -16px;
+    outline: 0;
+    width: 32px;
+    height: 32px;
+    text-indent: 0;
+    z-index: 9999;
+    top:auto;
+    bottom: 3%;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: #000;
+}
+.bx-wrapper .bx-prev {
+    background: none;
+    right: 10%;
+    left: auto;
+}
+.bx-wrapper .bx-next {
+    right: 0;
+    background: none;
+}
+/* start number  */
+.bx-wrapper .bx-pager{
+    bottom: 50%;
+    right: -42%;
+    
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active, .bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: none;
+}
+.bx-wrapper .bx-pager.bx-default-pager a.active {
+    font-size: 50px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+     background: none; 
+     text-indent: 0; 
+    display: block;
+    width: 19px;
+    height: 19px;
+    font-size: 22px;
+    margin: 0 5px;
+    /* outline: 0; */
+    color: #000;
+    -moz-border-radius: none;
+    -webkit-border-radius: none;
+    border-radius: none;
+    text-decoration:none;
+    transition: font-size 0.5s ease;
+    font-weight: 200;
+}
+.bx-wrapper .bx-pager.bx-default-pager a
+.box-right .box_slider{
+    width:80%;
+    margin: auto;
+}
+.box-right .product .box_slider .div {
+    width: 80%;
+    height: 100%;
+}
+.box-right .product .box_slider .product-img {
+    width: 80%;
+    margin: auto;
+    height: 400px;
+    
+}
+.box-right .product .box_slider .product-img.first{
+    background: url(./img/roberto-nickson-amtdAyzyDlo-unsplash.jpg);
+    background-size: 100% 100%;
+}
+.box-right .product .box_slider .product-img.second{
+    background: url(./img/artem-ivanchencko-au7qfx9rQw0-unsplash.jpg);
+    background-size: 100% 100%;
+}
+.box-right .product .box_slider .product-img.third{
+    background: url(./img/warion-taipei-Gb3wBsGr_mQ-unsplash.jpg);
+    background-size: 100% 100%;
+}
+.box-right .product .box_slider p{
+    padding-left: 43px;
+    font-family: 'Lato', sans-serif;
+}
+.box-right .product .box_slider p:first-of-type{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+}
+.box-right .about, .contact{
+    top: 100%;
+    
+}
+/* start about */
+#about{
+    padding: 16px;
+}
+#about h1{
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    
+}
+#about p{
+    color: rgb(80, 80, 80);
+    line-height:35px;
+}
+#about p::first-letter{
+    font-size: 45px;
+    color: #000;
+}
+/*start contact box  */
+#contact {
+    padding: 16px;
+}
+#contact h1{
+   font-size:100px;
+   color:#fff;
+   -webkit-text-stroke: 1px #000000;
+   margin-bottom: 16px;
+}
+#contact form div{
+    margin :8px 0;
+    text-align: center;
+    width: 100%;
+}
+#contact form div.fi-la-name input{
+    width: 132px;
+    height: 40px;
+    border-radius: 3px;
+    box-shadow: none;
+    outline: none;
+    border: 1px solid #a09e9e;
+    padding: 4px;
+
+}
+#contact form div.phone-em input{
+    height: 40px;
+    width: 267px;
+    border-radius: 3px;
+    border: 1px solid #a09e9e;
+    padding: 4px;
+    outline: none;
+}
+#contact form div.msg textarea{
+    height: 104px;
+    width: 267px;
+    border-radius:3px;
+    resize: none;
+    outline: none;
+    border:1px solid #a09e9e;
+}
+#contact form div.btn a{
+    display: inline-block;
+    background: #000;
+    padding: 8px 32px;
+    border-radius: 3px;
+    float: right;
+    cursor: pointer;
+    margin-right: 93px;
+    transition: background .4 linear;
+    color: #fff;
+}
