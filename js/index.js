@@ -37,7 +37,8 @@ function showHideBoxs(elt) {
       }, 500);
       elt.addClass('active').parent().siblings().find('a').removeClass('active');
 }
-$('.box-right .head .list-menu li a').on('click', function() {
+$('.box-right .head .list-menu li a').on('click', function(e) {
+    e.preventDefault();
     showHideBoxs($(this));
 })
 // start gere effecet backgound size to intro background
