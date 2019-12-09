@@ -234,19 +234,13 @@ font-size: 30px;
     width: 80%;
     margin: auto;
     height: 400px;
+    text-align: center;
     
 }
-.box-right .product .box_slider .product-img.first{
-    background: url(./img/roberto-nickson-amtdAyzyDlo-unsplash.jpg);
-    background-size: 100% 100%;
-}
-.box-right .product .box_slider .product-img.second{
-    background: url(./img/artem-ivanchencko-au7qfx9rQw0-unsplash.jpg);
-    background-size: 100% 100%;
-}
-.box-right .product .box_slider .product-img.third{
-    background: url(./img/warion-taipei-Gb3wBsGr_mQ-unsplash.jpg);
-    background-size: 100% 100%;
+.box-right .product .box_slider .product-img img{
+    max-width: 100%;
+    height: 100%;
+    display: inline;
 }
 .box-right .product .box_slider p{
     padding-left: 43px;
@@ -255,6 +249,21 @@ font-size: 30px;
 .box-right .product .box_slider p:first-of-type{
     font-family: 'Lato', sans-serif;
     font-weight: 700;
+    margin-top:4px;
+}
+.box-right .product .box_slider p:last-of-type a{
+    display: inline-block;
+    padding: 4px 16px;
+    background-color: #2d63c7;
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    margin:2px; 
+    position: relative;
+
+}
+.box-right .product .box_slider p:last-of-type a:hover {
+    background: #2557b4;
 }
 .box-right .about, .contact{
     top: 100%;
@@ -272,6 +281,7 @@ font-size: 30px;
 #about p{
     color: rgb(80, 80, 80);
     line-height:35px;
+    font-size:16px;
 }
 #about p::first-letter{
     font-size: 45px;
@@ -329,3 +339,47 @@ font-size: 30px;
     transition: background .4 linear;
     color: #fff;
 }
+/* media query  */
+@media only screen and (max-width:600px) {
+    body{
+        height: auto;
+        overflow: auto;
+    }
+    .book{
+        float: none;
+    }
+    .box-left {
+        overflow: hidden;
+        width: 100%;
+    }
+    .box-right {
+        overflow: hidden;
+        width: 100%;
+        
+    }
+    .bx-wrapper .bx-pager {
+        bottom: 50%;
+        right: -80%;
+    }
+    .bx-wrapper .bx-pager-item{
+    display: block;
+    width: 20px;
+    margin-right: 0;
+    }
+    .bx-wrapper .bx-pager.bx-default-pager a{
+        display: block;
+        padding: 24px;
+    }
+    .box-right {
+        height: 110vh;
+        
+    }
+    .box-right .product {
+       
+        height: 100vh;
+    }
+    .box-right .product .box_slider .product-img{
+        height: 260px;
+    }
+    
+}}} njjhjbhgbhhgffvvfccq²   vhgh

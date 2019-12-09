@@ -10,6 +10,7 @@
   src="https://code.jquery.com/jquery-3.4.1.min.js"
   integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
   crossorigin="anonymous"></script>
+  <script src="js/index.js"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
   <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <link rel="stylesheet" href="css/index.css">
@@ -47,19 +48,26 @@
                 <div class="product store" id="store">
                         <div class="box_slider">
                                 <div >
-                                    <div class="product-img first"></div>
-                                    <p>Lorem ipsum dolor sit amet.</p>
-                                    <p>viste site <a href="#">ici</a></p>
+                                    <div class="product-img first">
+                                        <img src="css/img/img01.png">
+                                    </div>
+                                    <p>Asvivid Women's Chunky Button Turtle Cowl Neck Asymmetric Hem Wrap Pullover Sweater</p>
+                                    <p><strong>$18.98 - $35.99</strong> <a target="_blank" href="https://amzn.to/35evKHW">view</a></p>
                                 </div>
                                 <div >
-                                        <div class="product-img second"></div>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                        <p>viste site <a href="#">ici</a></p>
+                                        <div class="product-img second">
+                                            <img src="css/img/img02.png">
+                                        </div>
+                                        <p>Slouchy Cable Knit Beanie For Women</p>
+                                        <p><strong>$18.98 - $35.99</strong><a target="_blank" href="https://amzn.to/2P3BSgJ">view</a></p>
                                 </div>
                                 <div>
-                                        <div class="product-img third"></div>
-                                        <p>Lorem ipsum dolor sit amet.</p>
-                                        <p>viste site <a href="#">ici</a></p>
+                                        <div class="product-img third">
+                                            <img  src="css/img/img03.png">
+                                        </div>
+                                        <p>Alex Evenings Women's Sequin Lace Mock Dress (Petite and Regular)
+                                        </p>
+                                        <p><strong>$73.59 - $298.57</strong> <a target="_blank" href="https://amzn.to/2P0IY5r">view</a></p>
                                 </div>
                                 
             
@@ -67,7 +75,10 @@
                 </div>
                 <div class="about product" id="about">
                  <h1>S.W</h1>
-                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam ipsa voluptatum, beatae quos vel veritatis cumque sunt, sequi expedita id velit distinctio consequuntur ad. Maiores enim consequuntur quod facere magnam.</p>
+                 <p>Fashion is a popular aesthetic expression in a certain time and context, 
+                     especially in clothing, footwear, lifestyle, accessories, makeup, 
+                     hairstyle and body proportions, Therefore we provide you on our site and our pages 
+                     in social media Everything new is about fashion And make you occupy her throne.</p>
                 </div>
                 <div class="contact product" id="contact">
                     <h1>Co.</h1>
@@ -91,12 +102,16 @@
             </div>   
         </div>
     </div>
-    <script src="js/index.js"></script>
     <script>
 // start slide element 
 $(document).ready(function(){
-      $('.box_slider').bxSlider();
+    $('.box_slider').bxSlider({
+        touchEnabled: false
+
+      });
+     
     });
     </script>
 </body>
 </html>
+<!--hello world i am student  -->

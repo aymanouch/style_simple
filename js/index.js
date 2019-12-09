@@ -44,7 +44,6 @@ $('.box-right .head .list-menu li a').on('click', function(e) {
 // start gere effecet backgound size to intro background
 var intro = $('.box-left .intro');
 window.onload = () => {
-    console.log('page is fully loaded');
     intro.css('background-size', '100% 100%')
   };
 // start gere hover a social web site link
@@ -67,6 +66,10 @@ window.onload = () => {
 
      });
     
- }
+ } 
+ 
  scaleHover1(links);
+
+
+
 });
